@@ -20,7 +20,7 @@ s.subspec "Category" do |cty|
 cty.source_files = "Pod/Classes/Category/**/*.{h,m}"
 end
 s.subspec "Tools" do |tts|
-tts.source_files = "Pod/Classes/Tool/**/*.{h,m}"
+tts.source_files = "Pod/Classes/Tools/**/*.{h,m}"
 end
 
 
