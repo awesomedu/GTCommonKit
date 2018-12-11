@@ -43,7 +43,7 @@
     
     // 保证key必须为字符串
     if (aKey && [aKey isKindOfClass:[NSString class]]) {
-        object  = [self objectForKeyCustom:aKey];
+        object  = [self gt_objectForKeyCustom:aKey];
     }
     
     return object;
