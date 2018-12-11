@@ -32,6 +32,18 @@ s.subspec "SlidingKit" do |skt|
 skt.source_files = "Pod/Classes/Tools/SlidingKit/*.{h,m}"
 end
 
+#NSArray
+s.subspec "NSArray" do |arr|
+arr.source_files = "Pod/Classes/Category/NSArray/*.{h,m}"
+
+#UIScrollView
+s.subspec "UIScrollView" do |scr|
+scr.source_files = "Pod/Classes/Category/UIScrollView+/*.{h,m}"
+
+end
+
+
+
 
 end
 

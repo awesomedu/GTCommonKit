@@ -1,16 +1,16 @@
 //
-//  NSMutableDictionary+Safe.m
-//  iOS-Category
+//  NSMutableDictionary+safe.h
+//  PodRepo
 //
-//  Created by 庄BB的MacBook on 2018/5/18.
-//  Copyright © 2018年 BBFC. All rights reserved.
+//  Created by mac on 2018/12/11.
+//  Copyright © 2018年 mac. All rights reserved.
 //
 
 #import "NSMutableDictionary+Safe.h"
 
 @implementation NSMutableDictionary (Safe)
 
-- (void)safeSetObject:(id)aObj forKey:(id<NSCopying>)aKey
+- (void)gt_safeSetObject:(id)aObj forKey:(id<NSCopying>)aKey
 {
     if (aObj && ![aObj isKindOfClass:[NSNull class]] && aKey) {
         [self setObject:aObj forKey:aKey];
@@ -19,7 +19,7 @@
     }
 }
 
-- (id)safeObjectForKey:(id<NSCopying>)aKey
+- (id)gt_safeObjectForKey:(id<NSCopying>)aKey
 {
     if (aKey != nil) {
         return [self objectForKey:aKey];

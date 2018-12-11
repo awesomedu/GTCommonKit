@@ -1,16 +1,16 @@
 //
-//  NSDictionary+Safe.m
-//  iOS-Category
+//  NSDictionary+safe.h
+//  PodRepo
 //
-//  Created by 庄BB的MacBook on 2018/5/18.
-//  Copyright © 2018年 BBFC. All rights reserved.
+//  Created by mac on 2018/12/11.
+//  Copyright © 2018年 mac. All rights reserved.
 //
 
 #import "NSDictionary+Safe.h"
 
 @implementation NSDictionary (Safe)
 
-- (id)safeObjectForKey:(NSString *)key {
+- (id)gt_safeObjectForKey:(NSString *)key {
     if (key == nil || [self isKindOfClass:[NSNull class]]) {
         return nil;
     }
@@ -22,7 +22,7 @@
 }
 
 
-- (void)safeSetValue:(id)object forKey:(id)key {
+- (void)gt_safeSetValue:(id)object forKey:(id)key {
     if ([key isKindOfClass:[NSNull class]]) {
         return;
     }
@@ -33,7 +33,7 @@
     }
 }
 
-- (id)objectForKeyCustom:(id)aKey {
+- (id)gt_objectForKeyCustom:(id)aKey {
     id object   = nil;
     
     // 检查是否字典对象
@@ -49,7 +49,7 @@
     return object;
 }
 
-- (id)safeKeyForValue:(id)value {
+- (id)gt_safeKeyForValue:(id)value {
     for (id key in self.allKeys) {
         if ([value isEqual:[self objectForKey:key]]) {
             return key;
