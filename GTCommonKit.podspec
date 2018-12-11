@@ -35,11 +35,11 @@ end
 #NSArray
 s.subspec "NSArray" do |arr|
 arr.source_files = "Pod/Classes/Category/NSArray/*.{h,m}"
+end
 
 #UIScrollView
 s.subspec "UIScrollView" do |scr|
 scr.source_files = "Pod/Classes/Category/UIScrollView+/*.{h,m}"
-
 end
 
 
