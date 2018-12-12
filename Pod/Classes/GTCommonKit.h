@@ -21,6 +21,7 @@
 #import "NSString+Safe.h"
 #import "UIScrollView+GTScrollView.h"
 #import "UITableView+GTTableView.h"
+#import "GTMacros.h"
 
 
 
