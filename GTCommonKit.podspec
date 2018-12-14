@@ -16,6 +16,9 @@ s.dependency 'MJExtension','~> 3.0.10'
 s.dependency 'IQKeyboardManager', '3.3.7'
 s.dependency 'ActionSheetPicker-3.0'
 s.dependency 'MJRefresh'
+s.dependency 'FMDB', '~> 2.7.5'
+
+
 
 #头文件
 s.source_files = "Pod/Classes/GTCommonKit.h"
