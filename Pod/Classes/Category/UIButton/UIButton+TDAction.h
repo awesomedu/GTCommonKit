@@ -16,9 +16,9 @@
 @interface UIButton (TDAction)
 
 /// 点击事件
-- (void)td_setEventTouchUpInsideHandel:(void(^)(UIButton *btn))handel;
+- (void)gt_setEventTouchUpInsideHandel:(void(^)(UIButton *btn))handel;
 
 /// 倒计时处理
-- (void)td_countTimeTask;
+- (void)gt_countTimeTask;
 
 @end

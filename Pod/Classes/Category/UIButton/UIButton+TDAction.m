@@ -19,7 +19,7 @@ static const NSInteger COUNT_TIME = 59;
 
 
 @interface UIButton (_TDAction)
-@property (copy, nonatomic) void(^td_eventTouchUpInsideHandelBlock)(UIButton *btn);
+@property (copy, nonatomic) void(^gt_eventTouchUpInsideHandelBlock)(UIButton *btn);
 
 @end
 
@@ -28,19 +28,13 @@ static const NSInteger COUNT_TIME = 59;
 @implementation UIButton (TDAction)
 
 
-
-
-
-
-
-
 #pragma mark - Public
-- (void)td_setEventTouchUpInsideHandel:(void (^)(UIButton *))handel {
-    self.td_eventTouchUpInsideHandelBlock = handel;
+- (void)gt_setEventTouchUpInsideHandel:(void (^)(UIButton *))handel {
+    self.gt_eventTouchUpInsideHandelBlock = handel;
     [self addTarget:self action:@selector(td_eventTouchUpInsideHandel) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)td_countTimeTask{
+- (void)gt_countTimeTask{
     self.layer.borderWidth = 0;
     __block NSInteger time = COUNT_TIME; //倒计时时间
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -76,24 +70,24 @@ static const NSInteger COUNT_TIME = 59;
 
 
 #pragma mark - Private
-- (void)td_eventTouchUpInsideHandel
+- (void)gt_eventTouchUpInsideHandel
 {
-    if (self.td_eventTouchUpInsideHandelBlock) {
-        self.td_eventTouchUpInsideHandelBlock(self);
+    if (self.gt_eventTouchUpInsideHandelBlock) {
+        self.gt_eventTouchUpInsideHandelBlock(self);
     }
 }
 
 #pragma mark - Getter & Setter
-- (void (^)(UIButton *))td_eventTouchUpInsideHandelBlock
+- (void (^)(UIButton *))gt_eventTouchUpInsideHandelBlock
 {
     NSLog(@"111");
-    return objc_getAssociatedObject(self, @selector(td_eventTouchUpInsideHandelBlock));
+    return objc_getAssociatedObject(self, @selector(gt_eventTouchUpInsideHandelBlock));
 }
 
-- (void)setTd_eventTouchUpInsideHandelBlock:(void (^)(UIButton *))td_eventTouchUpInsideHandelBlock
+- (void)setGt_eventTouchUpInsideHandelBlock:(void (^)(UIButton *))gt_eventTouchUpInsideHandelBlock
 {
     NSLog(@"2222");
-    objc_setAssociatedObject(self, @selector(td_eventTouchUpInsideHandelBlock), td_eventTouchUpInsideHandelBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(gt_eventTouchUpInsideHandelBlock), gt_eventTouchUpInsideHandelBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 
