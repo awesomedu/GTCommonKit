@@ -61,7 +61,7 @@ end
 #UIButton
 s.subspec "UIButton" do |btn|
 btn.source_files = "Pod/Classes/Category/UIButton/*.{h,m}"
-s.dependency = "Pod/Classes/Category/UIColor"
+s.dependency = "Pod/UIColor"
 end
 
 #UIColor
