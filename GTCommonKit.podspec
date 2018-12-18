@@ -66,7 +66,6 @@ end
 #UIButton
 s.subspec "UIButton" do |btn|
 btn.source_files = "Pod/Classes/Category/UIButton/*.{h,m}"
-btn.dependency = "GTCommonKit/UIColor"
 end
 
 #Macros
