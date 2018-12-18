@@ -63,10 +63,6 @@ s.subspec "UIColor" do |clo|
 clo.source_files = "Pod/Classes/Category/UIColor/*.{h,m}"
 end
 
-#UIButton
-s.subspec "UIButton" do |btn|
-btn.source_files = "Pod/Classes/Category/UIButton/*.{h,m}"
-end
 
 #Macros
 s.subspec "Macros" do |mcr|
