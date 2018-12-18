@@ -58,15 +58,15 @@ s.subspec "UIAlertController" do |scr|
 scr.source_files = "Pod/Classes/Category/UIAlertController/*.{h,m}"
 end
 
+#UIColor
+s.subspec "UIColor" do |clo|
+clo.source_files = "Pod/Classes/Category/UIColor/*.{h,m}"
+end
+
 #UIButton
 s.subspec "UIButton" do |btn|
 btn.source_files = "Pod/Classes/Category/UIButton/*.{h,m}"
 btn.dependency = "GTCommonKit/UIColor"
-end
-
-#UIColor
-s.subspec "UIColor" do |clo|
-clo.source_files = "Pod/Classes/Category/UIColor/*.{h,m}"
 end
 
 #Macros

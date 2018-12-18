@@ -8,7 +8,8 @@
 
 #import "UIButton+TDAction.h"
 #import <objc/runtime.h>
-#import "UIButton+TDAction.h"
+#import "UIColor+GTHex.h"
+
 
 /// 倒计时时间
 static const NSInteger COUNT_TIME = 59;
