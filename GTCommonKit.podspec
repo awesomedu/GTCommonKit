@@ -54,15 +54,9 @@ scr.source_files = "Pod/Classes/Category/UIScrollView+/*.{h,m}"
 end
 
 #UIController
-s.subspec "UIAlertController" do |scr|
-scr.source_files = "Pod/Classes/Category/UIAlertController/*.{h,m}"
+s.subspec "UIAlertController" do |cl|
+cl.source_files = "Pod/Classes/Category/UIAlertController/*.{h,m}"
 end
-
-#UIColor
-s.subspec "UIColor" do |clo|
-clo.source_files = "Pod/Classes/Category/UIColor/*.{h,m}"
-end
-
 
 #Macros
 s.subspec "Macros" do |mcr|
