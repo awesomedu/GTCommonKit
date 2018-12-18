@@ -22,6 +22,13 @@
 #import "UIScrollView+GTScrollView.h"
 #import "UITableView+GTTableView.h"
 #import "UIAlertController+GTAlertControllerBlocks.h"
+#import "UIColor+GTGradient.h"
+#import "UIColor+GTHex.h"
+#import "UIColor+GTModify.h"
+#import "UIColor+GTRandom.h"
+#import "UIColor+GTWebColor.h"
+#import "UIButton+TDAction"
+
 #import "GTMacros.h"
 
 

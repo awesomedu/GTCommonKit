@@ -8,10 +8,12 @@
 
 #import "UIButton+TDAction.h"
 #import <objc/runtime.h>
-#import "UIColor+TDHexColor.h"
+#import "UIColor+GTHex.h"
 
 /// 倒计时时间
 static const NSInteger COUNT_TIME = 59;
+/// 按钮颜色
+#define ButtonColor [UIColor gt_colorWithHexString:@"#DADADA"]
 
 
 
@@ -61,7 +63,7 @@ static const NSInteger COUNT_TIME = 59;
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置按钮显示读秒效果
                 [self setTitle:[NSString stringWithFormat:@"重新发送(%.2d)", seconds] forState:UIControlStateNormal];
-                [self setBackgroundColor:[UIColor td_colorWithHexString:@"#DADADA"]];
+                [self setBackgroundColor:ButtonColor];
                 [self  setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
                 self.userInteractionEnabled = NO;
             });
