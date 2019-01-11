@@ -1,10 +1,10 @@
 //
 //  NSString+Predicate.h
-//  iOS-Category
 //
-//  Created by 庄BB的MacBook on 16/7/20.
-//  Copyright © 2016年 BBFC. All rights reserved.
+//  Created by mac on 2019/01/09.
+//  Copyright © 2018年 mac. All rights reserved.
 //
+
 
 #import <Foundation/Foundation.h>
 

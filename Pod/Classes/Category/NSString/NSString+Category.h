@@ -1,8 +1,8 @@
 //
-//  PK-ios
+//  NSStringCategory
 //
-//  Created by peikua on 15/9/15.
-//  Copyright (c) 2015年 peikua. All rights reserved.
+//  Created by mac on 2018/12/11.
+//  Copyright © 2018年 mac. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

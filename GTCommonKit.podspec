@@ -43,6 +43,11 @@ s.subspec "DBManager" do |dm|
 dm.source_files = "Pod/Classes/Tools/DBManager/*.{h,m}"
 end
 
+#GTProgressHud
+s.subspec "GTProgressHud" do |dm|
+dm.source_files = "Pod/Classes/Tools/GTProgressHud/*.{h,m}"
+end
+
 #NSArray
 s.subspec "NSArray" do |arr|
 arr.source_files = "Pod/Classes/Category/NSArray/*.{h,m}"
