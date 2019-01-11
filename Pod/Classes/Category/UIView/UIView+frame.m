@@ -57,7 +57,7 @@
     return self.frame.size.width;
 }
 
-- (void)setLGt_width:(CGFloat)gt_width {
+- (void)setGt_width:(CGFloat)gt_width {
     CGRect frame = self.frame;
     frame.size.width = gt_width;
     self.frame = frame;
@@ -67,7 +67,7 @@
     return self.frame.size.height;
 }
 
-- (void)setLmj_height:(CGFloat)gt_height {
+- (void)setGt_height:(CGFloat)gt_height {
     CGRect frame = self.frame;
     frame.size.height = gt_height;
     self.frame = frame;

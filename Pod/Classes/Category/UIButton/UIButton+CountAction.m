@@ -1,12 +1,12 @@
 //
-//  UIButton+TDAction.m
+//  UIButton+CountAction.m
 //  YLB_Pro
 //
 //  Created by 唐都 on 2017/10/25.
 //  Copyright © 2017年 com.tangdu.@R. All rights reserved.
 //
 
-#import "UIButton+TDAction.h"
+#import "UIButton+CountAction.h"
 #import <objc/runtime.h>
 #import "UIColor+GTHex.h"
 
@@ -18,14 +18,14 @@ static const NSInteger COUNT_TIME = 59;
 
 
 
-@interface UIButton (_TDAction)
+@interface UIButton (_CountAction)
 @property (copy, nonatomic) void(^gt_eventTouchUpInsideHandelBlock)(UIButton *btn);
 
 @end
 
 
 
-@implementation UIButton (TDAction)
+@implementation UIButton (_CountAction)
 
 
 #pragma mark - Public
