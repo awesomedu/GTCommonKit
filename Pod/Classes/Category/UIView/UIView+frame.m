@@ -14,7 +14,7 @@
     return self.frame.origin.x;
 }
 
-- (void)gt_x:(CGFloat)gt_x {
+- (void)setGt_x:(CGFloat)gt_x {
     CGRect frame = self.frame;
     frame.origin.x = gt_x;
     self.frame = frame;
@@ -24,7 +24,7 @@
     return self.frame.origin.y;
 }
 
-- (void)gt_y:(CGFloat)gt_y {
+- (void)setGt_y:(CGFloat)gt_y {
     CGRect frame = self.frame;
     frame.origin.y = gt_y;
     self.frame = frame;
