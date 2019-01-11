@@ -27,6 +27,8 @@
 #import "UIColor+GTModify.h"
 #import "UIColor+GTRandom.h"
 #import "UIColor+GTWebColor.h"
+#import "UIView+frame.h"
+#import "GTProgressHud.h"
 
 
 #import "GTMacros.h"

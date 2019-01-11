@@ -20,7 +20,7 @@
     self.frame = frame;
 }
 
-- (CGFloat)gt__y {
+- (CGFloat)gt_y {
     return self.frame.origin.y;
 }
 
@@ -103,7 +103,7 @@
     return self.frame.size;
 }
 
-- (void)setLmj_size:(CGSize)gt_size {
+- (void)setGt_size:(CGSize)gt_size {
     CGRect frame = self.frame;
     frame.size = gt_size;
     self.frame = frame;
