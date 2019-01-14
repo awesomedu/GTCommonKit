@@ -7,7 +7,7 @@
 //
 
 #import "GTProgressHud.h"
-#import <MBProgressHUD.h>
+#import "MBProgressHUD.h"
 
 @implementation GTProgressHud
 

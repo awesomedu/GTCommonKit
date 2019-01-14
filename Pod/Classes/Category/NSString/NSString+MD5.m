@@ -46,7 +46,7 @@
 #pragma mark - 16位 大写
 +(NSString *)gt_MD5ForUpper16Bate:(NSString *)str{
     
-    NSString *md5Str = [self MD5ForUpper32Bate:str];
+    NSString *md5Str = [self gt_MD5ForUpper32Bate:str];
     
     NSString  *string;
     for (int i=0; i<24; i++) {
@@ -59,7 +59,7 @@
 #pragma mark - 16位 小写
 +(NSString *)gt_MD5ForLower16Bate:(NSString *)str{
     
-    NSString *md5Str = [self MD5ForLower32Bate:str];
+    NSString *md5Str = [self gt_MD5ForLower32Bate:str];
     
     NSString  *string;
     for (int i=0; i<24; i++) {

@@ -15,7 +15,7 @@
     [self gt_scrollToTopAnimated:YES];
 }
 
-- (void)scrollToBottom {
+- (void)gt_scrollToBottom {
     [self gt_scrollToBottomAnimated:YES];
 }
 
