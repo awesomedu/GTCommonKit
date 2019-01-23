@@ -14,7 +14,7 @@
  @param compareDate <#compareDate description#>
  @return <#return value description#>
  */
-+ (NSString *) compareCurrentTime:(NSTimeInterval) compareDate;
++ (NSString *)gt_compareCurrentTime:(NSTimeInterval) compareDate;
 
 /**
  通过时间戳得出对应的时间
@@ -22,7 +22,7 @@
  @param timestamp 时间戳
  @return <#return value description#>
  */
-+ (NSString *) getDateStringWithTimestamp:(NSTimeInterval)timestamp;
++ (NSString *)gt_getDateStringWithTimestamp:(NSTimeInterval)timestamp;
 
 /**
  //通过时间戳和显示时间
@@ -30,5 +30,5 @@
  @param formatter 格式
  @return <#return value description#>
  */
-+ (NSString *) getStringWithTimestamp:(NSTimeInterval)timestamp formatter:(NSString*)formatter;
++ (NSString *)gt_getStringWithTimestamp:(NSTimeInterval)timestamp formatter:(NSString*)formatter;
 @end

@@ -9,7 +9,7 @@
 
 @implementation NSString (Category)
 
-+ (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum
++ (NSString*)gt_getSecrectStringWithPhoneNumber:(NSString*)phoneNum
 {
     if (phoneNum.length==11) {
         NSMutableString *newStr = [NSMutableString stringWithString:phoneNum];
@@ -20,7 +20,7 @@
     return nil;
 }
 
-+ (NSString*) getSecrectStringWithAccountNo:(NSString*)accountNo
++ (NSString*)gt_getSecrectStringWithAccountNo:(NSString*)accountNo
 {
     NSMutableString *newStr = [NSMutableString stringWithString:accountNo];
     NSRange range = NSMakeRange(4, 8);
@@ -30,7 +30,7 @@
     return newStr;
 }
 
-+ (NSString*) stringMobileFormat:(NSString *)mobile {
++ (NSString*)gt_stringMobileFormat:(NSString *)mobile {
     if (mobile.length==11) {
         NSMutableString* value = [[NSMutableString alloc] initWithString:mobile];
         [value insertString:@"-" atIndex:3];
@@ -41,7 +41,7 @@
     return nil;
 }
 
-+ (NSString*) stringChineseFormat:(double)value{
++ (NSString*)gt_stringChineseFormat:(double)value{
     
     if (value / 100000000 >= 1) {
         return [NSString stringWithFormat:@"%.0f亿",value/100000000];
@@ -54,7 +54,7 @@
     }
 }
 
-+(NSString *)countNumAndChangeformat:(NSString *)num
++(NSString *)gt_countNumAndChangeformat:(NSString *)num
 {
     NSNumberFormatter *moneyFormatter = [[NSNumberFormatter alloc] init];
     moneyFormatter.positiveFormat = @"###,###";
@@ -62,19 +62,19 @@
     return [moneyFormatter stringFromNumber:[num toNumber]];
 }
 
--(CGFloat)heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width
+-(CGFloat)gt_heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width
 {
     NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]};
     return  [self boundingRectWithSize:CGSizeMake(width, 0) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attrs context:nil].size.height;
 }
 
-- (CGFloat) widthWithFontSize:(CGFloat)fontSize height:(CGFloat)maxHeight
+- (CGFloat)gt_widthWithFontSize:(CGFloat)fontSize height:(CGFloat)maxHeight
 {
     NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]};
     return  [self boundingRectWithSize:CGSizeMake(0, maxHeight) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attrs context:nil].size.width;
 }
 
-- (NSNumber*)toNumber
+- (NSNumber*)gt_toNumber
 {
     NSNumberFormatter *formatter=[[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
@@ -83,7 +83,7 @@
 }
 
 /*抹除运费小数末尾的0*/
-- (NSString *)removeUnwantedZero {
+- (NSString *)gt_removeUnwantedZero {
     if ([[self substringWithRange:NSMakeRange(self.length- 3, 3)] isEqualToString:@"000"]) {
         return [self substringWithRange:NSMakeRange(0, self.length-4)]; // 多一个小数点
     } else if ([[self substringWithRange:NSMakeRange(self.length- 2, 2)] isEqualToString:@"00"]) {

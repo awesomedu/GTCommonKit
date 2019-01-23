@@ -16,7 +16,7 @@
  @param phoneNum 电话号码
  @return 135*****262
  */
-+ (NSString*) getSecrectStringWithPhoneNumber:(NSString*)phoneNum;
++ (NSString*)gt_getSecrectStringWithPhoneNumber:(NSString*)phoneNum;
 
 
 /**
@@ -25,7 +25,7 @@
  @param accountNo 银行卡号
  @return <#return value description#>
  */
-+ (NSString*) getSecrectStringWithAccountNo:(NSString*)accountNo;
++ (NSString*)gt_getSecrectStringWithAccountNo:(NSString*)accountNo;
 
 
 /**
@@ -34,7 +34,7 @@
  @param mobile
  @return <#return value description#>
  */
-+ (NSString*) stringMobileFormat:(NSString*)mobile;
++ (NSString*)gt_stringMobileFormat:(NSString*)mobile;
 
 //数组中文格式（几万）可自行添加
 
@@ -44,7 +44,7 @@
  @param value 金额
  @return <#return value description#>
  */
-+ (NSString*) stringChineseFormat:(double)value;
++ (NSString*)gt_stringChineseFormat:(double)value;
 
 
 /**
@@ -53,14 +53,14 @@
  @param num <#num description#>
  @return <#return value description#>
  */
-+ (NSString*) countNumAndChangeformat:(NSString *)num;
++ (NSString*)gt_countNumAndChangeformat:(NSString *)num;
 
 /**
  *  NSString转为NSNumber
  *
  *  @return NSNumber
  */
-- (NSNumber*) toNumber;
+- (NSNumber*)gt_toNumber;
 
 /**
  计算文字高度
@@ -69,7 +69,7 @@
  @param width 最大宽度
  @return <#return value description#>
  */
-- (CGFloat  ) heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width;
+- (CGFloat  )gt_heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width;
 
 /**
  计算文字宽度
@@ -78,19 +78,19 @@
  @param maxHeight 最大高度
  @return <#return value description#>
  */
-- (CGFloat  ) widthWithFontSize:(CGFloat)fontSize height:(CGFloat)maxHeight;
+- (CGFloat  )gt_widthWithFontSize:(CGFloat)fontSize height:(CGFloat)maxHeight;
 /**
  抹除小数末尾的0
 
  @return <#return value description#>
  */
-- (NSString*) removeUnwantedZero;
+- (NSString*)gt_removeUnwantedZero;
 
 /**
  //去掉前后空格
 
  @return <#return value description#>
  */
-- (NSString*) trimmedString;
+- (NSString*)gt_trimmedString;
 
 @end

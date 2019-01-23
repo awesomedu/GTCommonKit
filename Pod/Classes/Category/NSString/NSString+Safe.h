@@ -8,17 +8,17 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Safe)
+/// 安全获取子字符串
+- (NSString *)gt_safeSubstringFromIndex:(NSUInteger)from;
 
-- (NSString *)safeSubstringFromIndex:(NSUInteger)from;
+- (NSString *)gt_safeSubstringToIndex:(NSUInteger)to;
 
-- (NSString *)safeSubstringToIndex:(NSUInteger)to;
+- (NSString *)gt_safeSubstringWithRange:(NSRange)range;
 
-- (NSString *)safeSubstringWithRange:(NSRange)range;
+- (NSRange)gt_safeRangeOfString:(NSString *)aString;
 
-- (NSRange)safeRangeOfString:(NSString *)aString;
+- (NSRange)gt_safeRangeOfString:(NSString *)aString options:(NSStringCompareOptions)mask;
 
-- (NSRange)safeRangeOfString:(NSString *)aString options:(NSStringCompareOptions)mask;
-
-- (NSString *)safeStringByAppendingString:(NSString *)aString;
+- (NSString *)gt_safeStringByAppendingString:(NSString *)aString;
 
 @end

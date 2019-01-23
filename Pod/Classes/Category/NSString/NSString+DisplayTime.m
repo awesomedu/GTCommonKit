@@ -9,7 +9,7 @@
 
 @implementation NSString (DisplayTime)
 
-+(NSString *) compareCurrentTime:(NSTimeInterval) compareDate
++(NSString *)gt_compareCurrentTime:(NSTimeInterval) compareDate
 {
     NSDate *confromTimesp        = [NSDate dateWithTimeIntervalSince1970:compareDate/1000];
     
@@ -61,7 +61,7 @@
     
     return  result;
 }
-+ (NSString*) getDateStringWithTimestamp:(NSTimeInterval)timestamp
++ (NSString*)gt_getDateStringWithTimestamp:(NSTimeInterval)timestamp
 {
     NSDate *confromTimesp    = [NSDate dateWithTimeIntervalSince1970:timestamp/1000];
     NSCalendar *calendar     = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
@@ -77,7 +77,7 @@
 
 
 
-+ (NSString*) getStringWithTimestamp:(NSTimeInterval)timestamp formatter:(NSString*)formatter
++ (NSString*)gt_getStringWithTimestamp:(NSTimeInterval)timestamp formatter:(NSString*)formatter
 {
     if ([NSString stringWithFormat:@"%@", @(timestamp)].length == 13) {
         timestamp /= 1000.0f;
