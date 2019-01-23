@@ -59,7 +59,7 @@
     NSNumberFormatter *moneyFormatter = [[NSNumberFormatter alloc] init];
     moneyFormatter.positiveFormat = @"###,###";
     //如要增加小数点请自行修改为@"###,###,##"
-    return [moneyFormatter stringFromNumber:[num toNumber]];
+    return [moneyFormatter stringFromNumber:[num gt_toNumber]];
 }
 
 -(CGFloat)gt_heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width
@@ -96,7 +96,7 @@
 }
 
 //去掉前后空格
-- (NSString *)trimmedString{
+- (NSString *)gt_trimmedString{
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
 }
 
